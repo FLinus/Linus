@@ -13,7 +13,7 @@ pipeline {
     }
     stage('Test'){
     steps {
-    sh 'apt install -y ipython'
+    sh '/data/jenkins/ipy-install.sh'
     }
     }
   }
