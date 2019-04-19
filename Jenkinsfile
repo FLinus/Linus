@@ -11,5 +11,10 @@ pipeline {
         sh 'python --version'
       }
     }
+    stage('Test'){
+    steps {
+    sh 'apt install -y ipython'
+    }
+    }
   }
 }
